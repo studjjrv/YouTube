@@ -1,0 +1,427 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    list-style: none;
+    text-decoration: none;
+    color:black;
+    
+}
+.nav-container{
+    float: top;
+}
+.main-container{
+    float: right;
+}
+.section-container{
+    float: right;
+
+}
+.asaide-container-visible{
+    float:left;
+}
+
+main{
+    width: 100%;
+}
+
+header {/*Barra Navegador general*/
+    display: flex;
+    height: 45px;
+    column-gap: 20px;
+    align-items: center;
+    padding: 30px 30px 30px 30px;
+
+}
+
+header div{ /*Barra Navegador primera sección */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+#menu-logo{
+    display: flex;
+
+}
+#img-hamburguesa{
+    width: 25px;
+    height: 25px;  
+    padding: 5px;
+ 
+}
+
+#img-hamburguesa:hover{
+
+    background-color: rgba(128, 128, 128, 0.413);
+    border-radius: 100%;
+}
+
+#logo-youtube{ /*Logo Youtube*/
+    width: 90px;
+    height: 35px;        
+}
+
+/*INICIO MENÚ LATERAL*/
+
+#btn-menu{
+    display: none;
+}
+.container-menu{
+    position: fixed;
+    top:0;
+    left:0;
+    transition: all 500ms ease;
+    opacity: 0;
+    visibility: hidden;
+    overflow-y: scroll;
+    height: 100vh;
+}
+
+#btn-menu:checked ~ .container-menu{
+    opacity: 3;
+    visibility: visible;
+
+}
+
+.style-btn-cierre{
+    display: flex;
+}
+.cont-menu{
+    display: flex;
+    width: 100%;
+    max-width: 250px;
+    background-color: white;
+    transition: all 10ms;
+    padding: 12px 12px 12px 12px;
+}
+
+.cont-menu img{
+    margin-right: 20px;
+    width: 24px;
+    height: 24px;
+    
+}
+
+.cont-menu ul li{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    
+
+}
+
+.cont-menu ul li a{
+    display: flex;
+    align-items: center;
+    margin: 0px 8px 0px 8px;
+    padding: 0px 2px 0px 15px;
+    color:black;
+    border-radius: 15px;
+    font-size: 12px;
+    width: 100%;
+    height: 40px;
+}
+
+.cont-menu ul li a:hover{   
+    background-color: #7f7c7c2f;
+}
+
+.br-suscri{/*border radiuo imagnes de canles suscritos*/
+    border-radius: 50%;
+}
+/*Menú lateral fijo*/
+.mostrar{
+    width: 100%;
+    max-width: 80px;
+    background-color: white;
+    height: 100vh;
+    position: absolute;
+    background-color: white;
+}
+
+.mostrar img{
+    width: 24px;
+    height: 24px;
+}
+.mostrar a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 12px 12px 12px;
+    color:black;
+    font-size: 8px;
+    margin: 10px 10px 10px 10px;
+
+}
+.mostrar a:hover{
+    border-radius: 20px;
+    background: rgba(128, 128, 128, 0.404);
+
+
+}
+/* Cierre Menú lateral fijo*/
+
+/*Nav menu lateral desplegable*/
+.style-menu-lateral{
+    display: flex;
+    align-items: center;
+    padding: 22px 22px;
+    gap: 16px;
+    width: 100%;
+    max-width: 250px;
+    position: static;
+    background-color: rgb(255, 255, 255);
+    
+}
+
+#img-hamburguesa-menu{
+    width: 25px;
+    height: 25px;  
+    padding: 5px;
+}
+.titulo2-lateral{
+    font-size: 16px;
+    margin: 10px 10px 10px 20px;
+    color: rgb(0, 0, 0);
+
+}
+
+.linea{
+   
+        border-top: 1px solid rgba(91, 90, 90, 0.267);
+        height: 2px;
+        max-width: 200px;
+        padding: 0;
+        margin: 20px auto 0 auto;
+ 
+}
+/*Cierre Nav menu lateral desplegable*/
+
+
+/*CIERRE MENÚ LATERAL GENERAL*/
+
+
+/*Inicio Footet*/
+.container-footer{
+    display: flex;
+    flex-wrap: wrap ;
+    gap: 10px;
+    background-color: white;
+    width: 100%;
+    max-width: 250px;
+    color: black;
+    font-size: 16px;
+}
+.footer1{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10%;
+    justify-content: left;
+    align-items: center;
+    position: relative;
+    margin: 10px 0px 0px 15px;
+}
+.footer2{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10%;
+    justify-content: left;
+    align-items: center;
+    position: relative;
+    margin: 10px 0px 0px 15px;
+}
+.footer3 p{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10%;
+    justify-content: left;
+    align-items: center;
+    position: relative;
+    margin: 10px 0px 0px 15px;
+    color: rgba(146, 139, 139, 0.685);
+}
+
+
+/*cierre Footer*/
+
+
+header ul{
+    display: flex;
+
+}
+
+  .perfil-img{
+    height: 30px;
+    border-radius: 100%;
+  }
+
+
+.img-nav{
+   width: 30px;
+   height: 30px;
+   padding: 5px 5px 5px 5px; 
+}
+.img-nav:hover{
+    border-radius: 100%;
+    background-color: #2e2e2e8f; 
+ }
+
+
+.buscador{
+    border:1px solid #d7d7d7;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+	height: 40px;
+	width: 500px;  
+}
+
+#buscar{
+    width: 100%;
+    height: 25px;
+    margin-left: 10px;
+    border-radius: 20px;
+    border:0;
+    outline: none;
+   
+}
+#lupa
+{
+    border:1px solid #d7d7d7;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+	height: 100%;
+	width: 100%;
+}
+#lupa{
+    width: 40px;
+    height: 40px;    
+    position: relative;
+    padding: 10px 10px 10px 10px;
+    background-color: #dcd8d89f;   
+}
+
+#microfono{
+    width: 40px;
+    height: 40px;
+    border-radius:100%;
+    background-color: rgba(128, 128, 128, 0.413);
+    padding: 8px 3px 8px 3px;
+}
+
+#microfono:hover{
+    background-color: #2e2e2e8f;
+}
+
+.nav-menu ul {
+    display: flex;
+    align-items: center;
+    overflow: scroll;
+    position: static;
+    margin: 5px 0px 0px 100px;
+}
+
+.nav-menu ul li{ 
+    background-color: #7f7c7c2f; 
+    border-radius: 8px; 
+    font-size: 10px;
+    padding: 10px;
+    white-space: nowrap;
+    cursor: pointer; 
+    margin: 20px ;
+}
+
+.nav-menu ul li:hover{
+    background-color: #3b3b3b8f;
+}
+
+.videos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    position: static;
+    padding: 10px 0px 0px 100px;
+  }
+
+.leyenda{
+    display: flex;
+    width: 300px;
+ }
+iframe{
+    border-radius: 4%;
+
+}
+.leyenda img{
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+}
+
+/*PROPIEDADES DE LA LEYENDA*/
+h1{
+   
+    font-size: 14px;
+}
+h2{
+    font-size: 12px;
+    color: rgba(113, 109, 109, 0.594)
+}
+
+
+/*RESPONSIVE*/
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+    aside{
+        visibility: hidden;
+    }
+
+
+  
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    div{
+        background-color: yellow;
+    }
+  
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) 
+{
+    div{
+        background-color: blue;
+    }
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    div{
+        background-color: black;
+    }
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    div{
+        background-color: rgb(255, 255, 255);
+    }
+
+}
+@media only screen and (min-height: 600px) {
+    div{
+        background-color: blueviolet;
+    }
+
+}
+
+

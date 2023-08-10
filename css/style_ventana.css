@@ -1,0 +1,299 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    list-style: none;
+    text-decoration: none;
+    color:black;
+}
+
+nav {/*Barra Navegador general*/
+    height: 80px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 30px;
+
+}
+
+nav p{ /*Barra Navegador primera sección */
+    display: flex;
+    line-height: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15%;
+
+}
+#img-hamburguesa{
+    width: 25px;
+    height: 25px;
+    padding: 5%;
+}
+
+#img-hamburguesa:hover{
+    background-color: rgba(128, 128, 128, 0.413);
+    border-radius: 100%; 
+}
+
+#logo-youtube{ /*Logo Youtube*/
+    width: 90px;
+    height: 35px;        
+}
+
+/*INICIO MENÚ LATERAL*/
+
+
+
+/*CIERRE MENÚ LATERAL*/
+
+
+
+  .perfil-img{    
+    border-radius: 50%;
+  }
+
+
+
+nav ul{
+    display: flex;
+    gap:8%;
+}
+
+
+nav ul li img{
+
+   width: 30px;
+   height: 20px;
+ 
+}
+.buscador{
+    border:1px solid #d7d7d7;
+	padding: 4px;
+	height: 40px;
+	width: 550px;
+    border-radius: 30px;
+    line-height: 30px;
+    position: relative;
+    left:8%;
+    top: 5%;
+}
+
+#buscar{
+    width: 500px;
+    height: 25px;
+    border-radius: 20px;
+    border:0;
+    outline: none;
+   
+}
+#lupa{
+    width: 30;
+    height: 20px;
+    border-image: 20px;
+    border-image-width: 100px;
+    border-left: 1px solid #d7d7d7;
+    position: relative;
+    top:5px;
+    left: 5px;
+    padding: 3px;
+}
+#microfono{
+    width: 3.5%;
+    height: 30px;
+    position: relative;
+    top:4px;
+    right:30px;
+    border-radius:100%;
+    line-height: 30px;
+    background-color: rgba(128, 128, 128, 0.413);
+    padding: 5px;
+}
+
+#microfono:hover{
+    background-color: #2e2e2e8f;
+
+}
+div ul{
+    display: flex;
+    align-items: center;
+    overflow: scroll;
+
+}
+
+div ul li{ 
+
+    background-color: #7f7c7c2f; 
+    border-radius: 8px; 
+    font-size: 12px;
+    padding: 10px;
+    margin: 5px;
+    white-space: nowrap;   
+
+}
+
+
+div ul li:hover{
+    background-color: #2e2e2e8f;
+    
+}
+
+iframe{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 12% ;
+    width: 640px;
+    height: 360px;
+}
+
+
+.videos-laterales{
+    display: flex;
+    margin-left: 8px;
+    margin-top: 8px;
+    width: 168px;
+    height: 94px;
+    border-radius: 10px;
+}
+.leyenda{
+    display: flex;
+    justify-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    grid-gap: 12px;
+    margin: 10px 0px 0px 50px;
+
+}
+main h1{
+    font-size: 20px;
+    margin: 10px 0px 0px 12%;
+}
+main h2,h3{
+    font-size: 14px;
+}
+#img-youtuber{ /*Imagen de perfil del youtuber*/
+    border-radius: 50%;
+    width: 34px;
+    height: 34px;
+    margin: 0px 0px 0px 12%;
+
+}
+
+main h3{
+    display: flex;
+    margin-left: 140px;
+    background-color: gray;
+    border-radius: 5%;
+    padding: 10px;
+
+}
+
+
+#suscribirse{
+    height: 45px;
+    line-height: 1px;
+    border-radius: 30px;
+    padding: 6px;
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    margin: 0px 10px 0px 10px;
+    cursor: pointer;
+
+}
+#compartir{
+    height: 30px;
+    line-height: 1px;
+    border-radius: 30px;
+    padding: 20px;
+    background-color: gray;
+    color: white;
+    font-size: 16px;
+    margin: 0px 10px 0px 10px;
+    cursor: pointer;
+
+}
+
+#tres-puntos{
+    width: 3.5%;
+    height: 30px;
+    position: relative;
+    border-radius:100%;
+    background-color: rgba(128, 128, 128, 0.413);
+    padding: 5px;
+    margin-top: 5px;
+}
+#tres-puntos:hover{   
+    background-color: rgba(128, 128, 128, 0.525);
+}
+.decorar-manitos{
+    background-color: #7f7c7c2f;
+    border-radius: 30%;
+    width: 130px;
+    height: 45px;
+    line-height: 1px;
+    height: 45px;
+
+}
+
+#manitos1{
+    display: inline;
+    justify-content: space-between;
+    border-radius: 10%;
+    padding: 8px;
+    width: 34;
+    height: 44px;
+    margin-left: 1px;
+    
+}
+#manitos2{
+    display: inline;
+    justify-content: space-between;
+    border-radius: 10%;
+    padding: 8px;
+    width: 34;
+    height: 44px;
+    margin-left: 35px;
+    border-left: 1px solid gray ;
+    
+}
+aside{
+    display: block;
+    float:right;
+    width: 30%;
+    margin: 15px 20px 0px 0px;
+}
+
+.aside-videos{
+    display: flex;
+}
+.titulos-aside{
+    margin: 20px 0px 0px 5px;
+}
+
+#titulo1-aside{
+    font-size: 12px;
+
+}
+
+#titulo2-aside{
+    font-size: 10px;
+    margin-top: 5px;
+
+}
+
+#titulo3-aside{
+    font-size: 8px;
+    margin-top: 2px;
+
+}
+
+
+
+  
+
+
+
